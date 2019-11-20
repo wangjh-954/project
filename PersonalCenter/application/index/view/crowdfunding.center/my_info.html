@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="revised" content="Ningxia Seasons, 2015/8/13/" />
+<!-- 定义页面的最新版本 -->
+<meta name="description" content="网站简介" />
+<!-- 网站简介 -->
+<meta name="keywords" content="搜索关键字，以半角英文逗号隔开" />
+<!-- 搜索关键字 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+
+<!-- Bootstrap -->
+<link href="__STATIC__/css/crowdfunding.center/my_info.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- 开始 -->
+<div class="my_info_title">我的资料</div>
+<div class="my_info_title_3">
+  <ul>
+    <li id="listClick_1" onClick="listClick(1)" style="border-bottom: 1px solid #49BAEE; color: #49BAEE;">基本资料</li>
+    <li id="listClick_3" onClick="listClick(3)">修改信息</li>
+    <li id="listClick_4" onClick="listClick(4)">修改密码</li>
+  </ul>
+</div>
+
+
+  <table class="my_info_content_care_table">
+    <tbody>
+      <tr>
+        <td width="90" align="right" class="color555"></td>
+        <td class="color555"><span class="colorCA1E37 margin_left10 font_size12"></span></td>
+      </tr>
+
+      <tr>
+        <td align="right" class="color555">用户名：</td>
+        <td>{$Think.session.info[0]['username']}</td>
+      </tr>
+
+      <tr>
+        <td align="right" class="color555">手手机号码：</td>
+        <td>{$Think.session.info[0]['phonenumber']}</td>
+      </tr>
+      <tr>
+        <td align="right" class="color555">真实姓名：</td>
+        <td>{$Think.session.info[0]['name']}</td>
+      </tr>
+      <tr>
+        <td align="right" class="color555">性别：</td>
+        <td>{$Think.session.info[0]['sex']}</td>
+      </tr>
+      <tr>
+        <td align="right" class="color555">邮箱：</td>
+        <td>{$Think.session.info[0]['email']}</td>
+      </tr>
+
+      <tr>
+        <td align="right" class="color555">身份类型：</td>
+        <td>{$Think.session.info[0]['idtype']}</td>
+      </tr>
+
+      <tr>
+        <td align="right" class="color555">身份证号：</td>
+        <td>{$Think.session.info[0]['idnumber']}</td>
+          
+      </tr>
+    
+      
+      <tr>
+        <td align="right" class="color555">生日：</td>
+        <td>{$Think.session.info[0]['birthday']}</td>
+          
+      </tr>
+      <tr>
+        <td align="right" class="color555">出生地：</td>
+        <td>{$Think.session.info[0]['birthplace']}</td>
+          
+      </tr>
+      <tr>
+        <td align="right" class="color555">创建时间：</td>
+        <td>{$Think.session.info[0]['createon']}</td>
+          
+      </tr>
+    
+    </tbody>
+  </table>
+</div>
+
+<!-- 结束 --> 
+<script src="__STATIC__/js/jquery-2.1.1.min.js"></script>  
+<script src="__STATIC__/js/my_info.js"></script>
+<script src="__STATIC__/js/jquery.cityselect.js"></script> 
+<script type="text/javascript">
+// JavaScript Document
+
+</script>
+</body>
+</html>
